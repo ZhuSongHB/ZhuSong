@@ -16,7 +16,7 @@
 <meta property="og:description" content="知识内容:  栈的存储方式 队列的存储方式">
 <meta property="og:locale">
 <meta property="article:published_time" content="2020-07-30T15:28:11.000Z">
-<meta property="article:modified_time" content="2020-07-30T15:37:18.300Z">
+<meta property="article:modified_time" content="2020-07-31T01:07:31.053Z">
 <meta property="article:author" content="Song的博客">
 <meta property="article:tag" content="数据结构">
 <meta property="article:tag" content="栈和队列">
@@ -172,7 +172,10 @@
 </blockquote>
 <ul>
 <li><h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><ul>
-<li>先入后出( 类比成一个箱子，先放进去的在最下面，取东西从上面拿 )</li>
+<li><p>先入后出( 类比成一个箱子，先放进去的在最下面，取东西从上面拿 )</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Stack</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>(value) &#123;</span><br><span class="line">        <span class="built_in">this</span>.arr = [];</span><br><span class="line">    &#125;</span><br><span class="line">    push(value) &#123;</span><br><span class="line">        <span class="built_in">this</span>.arr.push(value);</span><br><span class="line">    &#125;</span><br><span class="line">    pop() &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">this</span>.arr.pop();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> stack = <span class="keyword">new</span> Stack();</span><br><span class="line">stack.push(<span class="number">2</span>);</span><br><span class="line">stack.push(<span class="number">3</span>);</span><br><span class="line">stack.push(<span class="number">4</span>);</span><br><span class="line"><span class="built_in">console</span>.log(stack.arr);</span><br><span class="line">stack.pop();</span><br><span class="line">stack.pop();</span><br><span class="line">stack.pop();</span><br><span class="line"><span class="built_in">console</span>.log(stack.arr);</span><br></pre></td></tr></table></figure>
+
+</li>
 </ul>
 </li>
 </ul>
@@ -185,6 +188,7 @@
 </ul>
 </li>
 </ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Queue</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>() &#123;</span><br><span class="line">        <span class="built_in">this</span>.arr = [];</span><br><span class="line">    &#125;</span><br><span class="line">    push(value) &#123;</span><br><span class="line">        <span class="built_in">this</span>.arr.push(value);</span><br><span class="line">    &#125;</span><br><span class="line">    shift() &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">this</span>.arr.shift();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> queue = <span class="keyword">new</span> Queue();</span><br><span class="line">queue.push(<span class="number">2</span>);</span><br><span class="line">queue.push(<span class="number">3</span>);</span><br><span class="line">queue.push(<span class="number">4</span>);</span><br><span class="line"><span class="built_in">console</span>.log(queue.arr);</span><br><span class="line">queue.shift();</span><br><span class="line">queue.shift();</span><br><span class="line"><span class="built_in">console</span>.log(queue.arr);</span><br></pre></td></tr></table></figure>
 
       
 
@@ -271,6 +275,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2020/07/31/%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          双向链表
+        
+      </div>
+    </a>
   
   
     <a href="/2020/07/30/%E6%8E%92%E5%BA%8F/" id="article-nav-older" class="article-nav-link-wrap">
@@ -404,6 +417,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">二叉树相关算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">排序</a>
               </li>
              
@@ -428,7 +445,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">栈和队列</a>
+                <a href="javascript:void(0)" class="js-tag color5">双向链表</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -436,7 +453,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">栈和队列</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">链表的逆置</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">二维数据结构</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">二叉树</a>
               </li>
             
             <div class="clearfix"></div>
