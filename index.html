@@ -154,23 +154,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h1><p>直接在页面上使用 React，引用下面的 JS</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">crossorigin</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/react@16/umd/react.development.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">crossorigin</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/react-dom@16/umd/react-dom.development.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/babel-standalone@6/babel.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="React-createElement"><a href="#React-createElement" class="headerlink" title="React.createElement"></a>React.createElement</h2><p>创建一个 React 元素，称作虚拟 DOM，本质上是一个对象</p>
-<ol>
-<li>参数 1：元素类型，如果是字符串，一个普通的 HTML 元素</li>
-<li>参数 2：元素的属性，一个对象</li>
-<li>后续参数：元素的子节点</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> span = React.createElement(<span class="string">&#x27;span&#x27;</span>, &#123;&#125;, <span class="string">&#x27;span&#x27;</span>);</span><br><span class="line"><span class="comment">//创建一个H1元素</span></span><br><span class="line"><span class="comment">// const h1 = React.createElement(元素类型);</span></span><br><span class="line"><span class="keyword">const</span> h1 = React.createElement(</span><br><span class="line">    <span class="string">&#x27;h1&#x27;</span>,</span><br><span class="line">    &#123;</span><br><span class="line">        title: <span class="string">&#x27;第一个React元素&#x27;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;hello world&#x27;</span>,</span><br><span class="line">    span</span><br><span class="line">);</span><br><span class="line"><span class="comment">// ReactDom.render(显示的东西，容器);</span></span><br><span class="line">ReactDOM.render(h1, <span class="built_in">document</span>.getElementById(<span class="string">&#x27;root&#x27;</span>));</span><br></pre></td></tr></table></figure>
-
-<h1 id="JSX"><a href="#JSX" class="headerlink" title="JSX"></a>JSX</h1><p>JS 的扩展语法，需要使用 babel 进行转义。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/babel&quot;</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> h1 = (</span></span><br><span class="line"><span class="handlebars"><span class="xml">        <span class="tag">&lt;<span class="name">h1</span> <span class="attr">title</span>=<span class="string">&quot;第一个React元素&quot;</span>&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml">            HelloWorld <span class="tag">&lt;<span class="name">span</span>&gt;</span>一个span元素<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml">        <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span></span><br><span class="line">    );</span><br><span class="line"><span class="javascript">    ReactDOM.render(h1, <span class="built_in">document</span>.getElementById(<span class="string">&#x27;root&#x27;</span>));</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="使用脚手架搭建工程"><a href="#使用脚手架搭建工程" class="headerlink" title="使用脚手架搭建工程"></a>使用脚手架搭建工程</h1><p>官方：create-react-app<br>第三方：next.js、umijs</p>
-<p>凡是使用 JSX 的文件，必须导入 React</p>
-
+        <blockquote>
+<p>知识内容:</p>
+<ul>
+<li>引用</li>
+</ul>
+</blockquote>
+        
+          <a class="article-more-a" href="/2020/08/03/React%E8%B5%B7%E6%AD%A5/#more">  >></a>
+        
       
 
       
@@ -1164,6 +1156,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">二叉树相关算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">二叉树前中后序列代码</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">还原二叉树代码</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">二叉树的搜索</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">二叉树的比较</a>
               </li>
              
@@ -1185,22 +1193,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">重复看</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">二叉树相关算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">二叉树前中后序列代码</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">还原二叉树代码</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">二叉树的搜索</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1240,7 +1232,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">链表的逆置</a>
+                <a href="javascript:void(0)" class="js-tag color2">线性数据结构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1248,7 +1240,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">线性数据结构</a>
+                <a href="javascript:void(0)" class="js-tag color1">链表的逆置</a>
               </li>
             
             <div class="clearfix"></div>
